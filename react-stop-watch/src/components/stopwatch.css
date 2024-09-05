@@ -1,0 +1,22 @@
+.stopwatch-counter{
+    background-color:  #333366;
+    border:none;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #99cc99;
+    cursor: pointer;
+}
+
+.stopwatch-btns{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding-top:2em;
+    padding-inline:4em;
+}
+
+.stopwatch-btns button{
+    width:100%;
+    padding-block:0.5em;
+    
+}

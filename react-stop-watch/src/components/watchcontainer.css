@@ -1,0 +1,55 @@
+.stopwatch-container{
+    width:50%;
+    margin:auto;
+    margin-top:5em;
+    background-color:  #333366;
+    height: 70vh;
+    border-radius:10px;
+}
+
+.option-buttons{
+    padding-top:1em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap:2em;
+}
+
+.option-buttons button{
+
+    border:none;
+    border-radius:1em;
+    font-size:1.5rem;
+    padding-block:1em;
+    padding-inline:1.5em;
+    background-color:  #993366;
+    cursor: pointer;
+}
+
+.option-buttons button:hover{
+   background-color: #996699;
+}
+
+.counter-container{
+   text-align: center;
+   padding-top:3em;
+}
+
+.click-btn-container{
+    padding-top:2em;
+    text-align: center;
+    padding-inline: 4em;
+}
+
+#click-btn{
+    text-align: center;
+    padding-block: 0.2em;
+    border-radius: 3px;
+    border:none;
+    width:100%;
+    background-color:  #336699;
+}
+
+#click-btn:hover{
+    outline:2px solid #000033;
+}
