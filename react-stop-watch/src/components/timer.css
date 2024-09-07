@@ -1,0 +1,50 @@
+
+.input-btn{
+    border:none;
+    background-color:  #333366;
+}
+
+.input-btn input{
+width:30%;
+text-align: center;
+border: none;
+background-color:#333366;
+font-size: 4rem;
+font-weight: 600;
+color: #99cc99;
+cursor: pointer;
+}
+
+.click-container{
+    padding-top:2em;
+    text-align: center;
+    padding-inline: 4em;
+   
+}
+
+.click-container button{
+    text-align: center;
+    padding-block: 0.2em;
+    border-radius: 3px;
+    border:none;
+    width:100%;
+    background-color:  #336699;
+}
+
+.click-container button:hover{
+    outline:2px solid #000033;
+}
+
+.timer-btns{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding-top:2em;
+    padding-inline:4em;
+}
+
+.timer-btns button{
+    width:100%;
+    padding-block:0.5em;
+    
+}
