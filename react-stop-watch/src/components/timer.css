@@ -1,22 +1,22 @@
 
 .input-btn{
     border:none;
-    background-color:  #333366;
+    background-color:  #2c303d;
 }
 
 .input-btn input{
 width:30%;
 text-align: center;
 border: none;
-background-color:#333366;
+background-color:  #2c303d;
 font-size: 4rem;
-font-weight: 600;
-color: #99cc99;
+font-weight: 500;
+color:#eef0ff;
 cursor: pointer;
 }
 
 .click-container{
-    padding-top:2em;
+    padding-top:6em;
     text-align: center;
     padding-inline: 4em;
    
@@ -25,10 +25,10 @@ cursor: pointer;
 .click-container button{
     text-align: center;
     padding-block: 0.2em;
-    border-radius: 3px;
+    border-radius: 20px;
     border:none;
     width:100%;
-    background-color:  #336699;
+    background-color:  #a8c7fa;
 }
 
 .click-container button:hover{
@@ -39,12 +39,30 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     gap: 1em;
-    padding-top:2em;
+    padding-top:6em;
     padding-inline:4em;
 }
 
 .timer-btns button{
     width:100%;
     padding-block:0.5em;
-    
+    background-color: #a8c7fa;
+    border-radius: 20px;
+    border: none;
+}
+
+.paused{
+    background-color: #7e5700 !important;
+}
+.timer-counter{
+    font-size: 4rem;
+    font-weight: 500;
+    color:#eef0ff;
+    cursor: pointer;
+    background-color:  #2c303d;
+    border: none;
+}
+
+.light-brown{
+    color:#ffeed9 !important;
 }
