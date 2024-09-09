@@ -31,9 +31,6 @@ cursor: pointer;
     background-color:  #a8c7fa;
 }
 
-.click-container button:hover{
-    outline:2px solid #000033;
-}
 
 .timer-btns{
     display: flex;

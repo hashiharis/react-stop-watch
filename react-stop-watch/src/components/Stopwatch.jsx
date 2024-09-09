@@ -4,30 +4,29 @@ import { TfiControlPause } from "react-icons/tfi";
 import { TfiControlPlay } from "react-icons/tfi";
 import { VscDebugRestart } from "react-icons/vsc";
 
-export const Stopwatch = () => {
+export const Stopwatch = ({
+  isTimerClicked,
+  setIsTimerClicked,
+  isActive,
+  setIsActive,
+}) => {
   const [stopWatchTimer, setStopWatchTimer] = useState(0.0);
-  const [isStopWatchTimerClicked, setIsStopWatchTimerClicked] = useState(false);
-  const [isActive, setIsActive] = useState(false);
   const stopWatchTimerRef = useRef(null);
 
   const incrementCounter = () => {
-    if (!isStopWatchTimerClicked) {
+    if (!isTimerClicked) {
       stopWatchTimerRef.current = setInterval(() => {
         setStopWatchTimer((stopWatchTimer) => stopWatchTimer + 0.01);
       }, 1000);
-      setIsStopWatchTimerClicked(
-        (isStopWatchTimerClicked) => !isStopWatchTimerClicked
-      );
+      setIsTimerClicked((isTimerClicked) => !isTimerClicked);
     } else {
       clearInterval(stopWatchTimerRef.current);
-      setIsStopWatchTimerClicked(
-        (isStopWatchTimerClicked) => !isStopWatchTimerClicked
-      );
+      setIsTimerClicked((isTimerClicked) => !isTimerClicked);
     }
   };
 
-  const pausedClass=`${!isStopWatchTimerClicked? "paused":""}`
-  const counterPause=`${!isStopWatchTimerClicked && isActive?"light-brown":""}`
+  const pausedClass = `${!isTimerClicked ? "paused" : ""}`;
+  const counterPause = `${!isTimerClicked && isActive ? "light-brown" : ""}`;
 
   return (
     <div className="stopwatch">
@@ -42,21 +41,21 @@ export const Stopwatch = () => {
       </button>
       {isActive ? (
         <div className="stopwatch-btns">
-          {isStopWatchTimerClicked ? (
+          {isTimerClicked ? (
             <button className={pausedClass} onClick={incrementCounter}>
               <TfiControlPause />
             </button>
           ) : (
-            <button  className={pausedClass} onClick={incrementCounter}>
+            <button className={pausedClass} onClick={incrementCounter}>
               <TfiControlPlay />
             </button>
           )}
           <button
-           className={pausedClass}
+            className={pausedClass}
             onClick={() => {
               clearInterval(stopWatchTimerRef.current);
               setStopWatchTimer(0.0);
-              setIsStopWatchTimerClicked(false);
+              setIsTimerClicked(false);
               setIsActive((isActive) => !isActive);
             }}
           >

@@ -7,6 +7,14 @@
     border-radius:10px;
 }
 
+.brown{
+    background-color:#353028 !important;
+}
+
+
+.light-brown{
+    color:#ffeed9 !important;
+}
 .option-buttons{
     padding-top:1em;
     display: flex;
@@ -32,10 +40,17 @@
 
 }
 
+.brown button:hover{
+    background-color: #5E5B58!important;
+}
+
 .selected{
     background-color: #34517d !important;
 }
 
+.hover-dark{
+    background-color: #826015 !important;
+}
 .counter-container{
    text-align: center;
    padding-top:3em;
